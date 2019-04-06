@@ -1,0 +1,62 @@
+html {
+  text-align: center;
+  margin-top: -1%;
+  margin-left: -1%;
+  font-size: calc(9px + 0.8vw);
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#main-doc {
+  text-align: left;
+  margin-left: 16%;
+  margin-right: -3px;
+  background: #ddd6f3;
+  background: -webkit-linear-gradient(to right, #faaca8, #ddd6f3);
+  background: linear-gradient(to right, rgba(222, 255, 193, 0.39), #ffb726);
+  font-family: 'Crete Round', serif;
+}
+
+#navbar {
+  height: 100%;
+  width: 16%;
+  position: fixed;
+  background: linear-gradient(to right, rgb(121, 240, 135), rgba(222, 255, 193, 0.39));
+}
+
+code { 
+  font-family: 'Arimo', sans-serif;
+  font-size: 80%;
+  margin-left: 2%;
+}
+h1 {
+  font-weight: 1000;
+  font-size: 180%;
+}
+
+h3 {
+  margin-left: 2%;
+}
+
+h4 {
+  margin-left: 2%;
+}
+
+p {
+  margin-left: 2%;
+}
+
+@media only screen and (max-width: 870px) {
+  #navbar {
+    display: none;
+  } 
+  #main-doc {
+    text-align: left;
+    margin-top: -12px;
+    margin-right: -8px;
+    margin-left: -4px;
+    background: #ddd6f3;
+    background: -webkit-linear-gradient(to right, #faaca8, #ddd6f3);
+    background: linear-gradient(to right, rgba(222, 255, 193, 0.39), #f87676);
+    font-family: 'Crete Round', serif;
+  }
+}

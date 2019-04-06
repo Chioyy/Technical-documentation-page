@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="styles/main.css" type="text/css"> 
+  <link href="https://fonts.googleapis.com/css?family=Arimo|Crete+Round|Open+Sans+Condensed:300" rel="stylesheet"> 
+  <title>Caldera Rules</title>
+</head>
+<body>
+  <nav id="navbar">
+    <header><h1>Caldera rules</h1></header><br>
+    <div id="flex">
+    <a class="nav-link" href="#Starting_the_game" target="_parent">Starting the game</a><br><br>
+    <a class="nav-link" href="#Player_skills" target="_parent">Player skills</a><br><br>
+    <a class="nav-link" href="#Turn_structure" target="_parent">Turn structure</a><br><br>
+    <a class="nav-link" href="#Star_map" target="_parent">Star map</a><br><br>
+    <a class="nav-link" href="#Loyalty_and_Events" target="_parent">Loyalty and Events</a><br><br>
+    <a class="nav-link" href="#NPC_Guide" target="_parent">NPC Guide</a><br><br>
+    <a class="nav-link" href="#Space_Battle" target="_parent">Space Battle</a><br><br>
+    <a class="nav-link" href="#Additional_rules" target="_parent">Additional rules</a>
+    </div>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Starting_the_game">
+      <header><br><h3>Starting the game</h3></header>
+      <p>Shuffle Deck.<br>
+        Place the Earth tile in middle of the playing area.<br>
+        Each player does the next steps simultaneously.<br>
+        Create a character. Fill in your name.<br>
+        Distribute 15 points between your stats. Cha, Int and Eng have to be at least 2.</p>
+        <ul>
+        <li>Cha - Charisma			Increased zone time  +  possible missions + mission reward</li>
+        <li>Int - Intelligence		Cuts research costs + number of research choices</li>
+        <li>Eng - Engineering		Cuts building costs + number of design choices</li>
+        <li>Arm - Rearmament		Increase effect of weapons and shields</li>
+        <li>Com - Compaction		Increases space in ships and shipyard</li>
+        <li>Eco - Economy			Increases income + mission credits reward</li>
+      </ul>
+        <p>Draw a card for each 2 points of players average charisma.<br>
+        Check out the card number and  missions for your possible zone starting mission.<br>
+        Choose one of these missions to be your first zone mission.<br>
+        Put all other cards to discard afterwards.<br>
+        Each player gets 500 starting credits.<br>
+        Purchase any number of these starting bonuses as many times you want.</p>
+        <pre><code>
+        <strong>Bonus	                		Cost</strong><br>		
+        Nuclear engine layout	    	30
+        Earth interceptor	        	50
+        Earth frigate		        	200
+        Random level 1 technology	60
+        First level technology		100
+        Random level 2 technology	150
+        Second level technology	        250
+        Stat point			                350
+        </code></pre>
+      <p>All starting interceptor are geared with nuclear engine and 2xlaser cannons.<br> 
+      All starting frigates are geared with cold fusion drive and 4xfusion cannon.<br> 
+        These ships are not refittable at any point of the game.<br><br></p>
+      <h4>Shipyard properties</h4>  
+      <p>3X Space - depending on your highest ship class technology<br> 
+      3X Structure points - depending on your highest ship class technology<br> 	
+      Shipyard can use all it's different weapons in battle.<br>
+        Starts with mining bots and can mine minerals from Earth.<br></p>
+        <pre><code>
+        <strong>Starting Technologies		Cost		Size</strong><br>
+        Interceptor class design	          30		30+layout*3	  
+        Nuclear engine		          10		5		          
+        Mining bots			          10		10		           
+        </code></pre>
+      <p>Draw a card for each 2 points you have Int.<br>
+      Choose one research from these cards.<br> That will be your starting research.<br> Put all other cards to discard afterwards.<br>
+      Draw a card for each 2 points you have Eng.<br> Choose one design from these cards.<br> You can buy this design.<br> Put all other cards to discard afterwards.<br>
+      Spend credits for your research, ship building and upgrading your shipyard.<br> You can only build one starship at this phase and each turn.<br>
+      Create first NPC Jack's Spacebay (JS).<br> Check NPC guide how to do it.<br>	
+      Draw one event card to be a starting event.<br>
+      Start the first turn at the turn structure part 3 - Moving the ships.</p>       
+    </section><br>  
+    <section class="main-section" id="Player_skills">
+      <header><h3>Player skills</h3></header>
+      <p>Cha - Charisma</p>
+      <ul>  		
+        <li>Each point of charisma increases starting zone timer by 1.</li>
+        <li>Each two points of charisma gives you one mission reward when completing a mission.</li>
+        <li>Each two points of charisma gives you one mission choice. Choose one of them.</li>
+      </ul>	
+      <p>Int - Intelligence</p>
+      <ul>	
+        <li>Each point of inteligence decreases the research cost by 5%.</li>
+        <li>Each two points of inteligence gives you one research option.</li>
+      </ul> 	
+      <p>Eng - Engineering</p>
+      <ul>
+        <li>Each point of engineering decreases the ship building total cost by 5%.</li>
+        <li>Each two points of engineering gives you one design choice. Choose one of them.</li>
+      </ul>
+      <p>Arm - Rearmament</p>	
+      <ul>
+          <li>Each point of rearmament increases ship damage by one point or 10%.</li>
+          <li>Each point of rearmament increases ship defensive abilities by 25%.</li>
+      </ul>
+      <p>Com - Compaction</p>	
+      <ul>
+        <li>Each point of compaction increases space in your ships and shipyard by 25%.</li>
+        <li>Each point of compaction increases max number of land units by 25%.</li>
+      </ul>
+      <p>Eco - Economy</p>
+      <ul>
+        <li>Each point of economy increases your income from mining by 10%. Rounded down.</li>
+        <li>Each point of economy increases mission reward credits by 10%.</li>
+      </ul>
+    </section><br>  
+    <section class="main-section" id="Turn_structure">
+      <header><h3>Turn structure</h3></header>
+      <ol>
+        <li>Battle, scout new space tile and remove one from zone counter.</li><br>
+        <ol type="a">
+          <li>Engage battles starting from one closest to the Earth if even start with north 	one 	and move clockwise.</li>
+          <li>Scout new systems starting from one closest to the Earth if even start with north 	one and move clockwise. Draw a card and check event table for result.</li>
+          <li>Remove one from zone counter</li><br>
+        </ol>
+        <li>Collect income and use credits to finance research, ship building and buy stuff from scrapyard.</li>
+        <p>Every mining ship that mines adds your income as much as they can mine in a turn.<br> Count all valid mining ships up and all mined minerals to your money.<br> 
+        You can do the next actions in any order.</p>
+        <ol type="a">
+          <li>Finance any amount of your current research, if you complete your research draw 	as many cards than you have int/2 (rounded down). Choose one of them to be your next research. You can finance your new research too.</li>
+          <li>Draw as many cards as you have eng/2 (rounded down) to find this turn opportunies to get new design for your technologies. Choose one or none of these designs.</li> 
+          <li>Build one ship and upgrade your spaceyard.</li><br>
+        </ol>
+        <li>Players decide to move their ships</li><br>
+        <ol type="a">
+          <li>For each ship player moves, move it to location you want it to go. Ship can't move 	to location that costs more than their engine allows.</li><br>
+        </ol>
+        <li>NPCs turn.</li><br>
+        <ol type="a">
+          <li>First do all following actions for NPC friend</li>
+          <ol type="A">
+            <li>Send ships</li>
+            <li>Get new ships</li>
+          </ol>           
+          <li>Do same actions for each enemies starting from one that is closest to the Earth and if tied then the northest and continued clockwise.</li>   
+        </ol>
+        </ol>                                                                                                                                                        
+      <p>Other things not mentioned in this turn structure are doable any point of the game.<br>
+        At any point if there are no cards in the deck, shuffle discard to the deck.</p><br>
+
+      <h4>Event table</h4> 
+      <p>Draw a card. Depending of the top number of the card do the action shown by this table.</p>
+        <ol>
+          <li>Enemy base/homeworld </li><br>
+          Draw a B tile. If there is a planet next to it draw a C tile and put it between 		existing planet and this new planet.<br>--> Create new NPC enemy.<br><br>
+          <li>Heavy enemy presence</li><br>
+          Draw a A tile. If there is a planet next to it draw a C tile and put it between 		existing planet and these asteroids.<br>-->  Put 4X enemy ships in this system if enemy base/homeplanet is already discovered.  If there is not an enemy yet in this zone this will be same that option 1. X is the number of players. (1)<br><br>
+          <li>Enemy presence</li><br>
+          Draw a A tile. If there is a planet next to it draw a C tile and put it between 		existing planet and these asteroids.<br>
+		-->  Put 2X enemy ships in this system if enemy base/homeplanet is already discovered.  If there is not an enemy yet in this zone this will be same that option 1. X is the number of players. (1)
+          (1) If there is multiple enemy bases, these ships belong to the closest one -> newest one.<br><br>
+          <li>Loyalty mission time</li><br> 
+          Draw a A tile. If there is a planet next to it draw a C tile and put it between 		existing planet and these asteroids.<br>
+          --> Draw a card and check out which mission you get.<br><br>  
+          <li>Loyalty mission time</li><br>  
+          Draw a C tile.<br> 
+          --> Draw a card and check out which mission you get.<br><br>  
+          <li>Empty system, nothing to see here</li><br> 
+		Draw a C tile.
+      </ol>
+    </section><br>  
+    <section class="main-section" id="Star_map">
+      <header><h3>Star map</h3></header>
+      <p>There can't be any planets or asteroids next to planets. If you would draw one, put one C tile between them.</p>
+       <ul>
+         <h4>Nebulas</h4>
+         <li>Half nebula</li>	
+         <li>Full nebula</li><br>
+         <h4>Asteroids</h4>
+         Tiles may consist the combination of many asteroids.<br><br>
+         <li> Small</li>			
+         <li> Average</li>
+         <li>Huge</li><br>
+         <h4>Planets</h4>
+         <li>Earthlike	-Increase land units tech by one and double starting army</li>
+         <li>Arid		-50% extra starting ships</li>
+         <li>Cold		-Defensive abilities are increased by 50%</li>
+         <li>Vulcan		-Add one layout for all weapons</li><br>
+         <h4>Distances</h4>
+         <p>Each tile away from the Earth costs one more point to move through.<br> 
+           Distance is count as half nebula when moved from empty space tile to another empty space tile.</p>
+         <li>Half nebula(HN)		Doubles the distance to travel</li>	
+         <li>Full nebula(FN)		Quadruples the distance to travel</li>
+      </ul>
+      <pre><code>
+            <strong>From tile next to it    From Earth	HN/2xEmpty	FN</strong>
+      1st layer		1	          	1	       	2		4
+      2nd layer		2		        3	       	4		8
+      3rd layer		3		        6	       	6		12
+      4th layer		4	        	10	       	8		16
+      5th layer		5	          	15	       	10		20
+      6th layer		6	        	21	       	12		24
+      7th layer		7	        	28	       	14		28
+</code></pre>
+      <h4>Star system minerals</h4>
+      <p>Multiply these amounts by the number of players.<br>These are maximum number that can be mined from these systems in one turn.</p><pre><code>
+<strong>      Zone	        Small   Average    Huge	    Planet</strong><br>		
+      Zone 1:	    10	20		40	 	80
+      Zone 2:	    20	40		80		150
+      Zone 3:	    40	80		150		300
+      Zone 4:	    80	150		300		500
+      Zone 5:	  150	300		500		1000
+      Zone 6:	  300	500		1000	2000
+      Zone 7:	  500	1000	2000	4000
+      Zone 8:	1000	2000	4000	8000
+      Zone 9:	2000	4000	8000	15000
+      Zone 10:	4000	8000	15000	30000
+      Zone 11:	8000      15000	30000	50000
+</code></pre>
+    </section><br>  
+    <section class="main-section" id="Loyalty_and_Events">
+      <header><h3>Loyalty and Events</h3></header>
+      <p>Draw as many cards that your cha/2 is.<br>Choose one of these to be your next mission.<br>
+        When you complete any mission draw as many reward cards as your cha/2.<br> 
+        When you complete a mission you get one point of NPC trust.</p>
+        <ul>
+          <h4>Possible missions</h4>
+          <li>Easy	1	Destroy an enemy ship outside of the solar system</li>
+          <li>Easy	2	Reach a new layout level for your most advanced tech</li>
+          <li>Med	3	Destroy all enemy ships of one race outside of their homeworld (1)</li>
+          <li>Med	4	Research a new tech level</li>
+          <li>Hard	5	Scout a new star system farther than any know tile</li>
+          <li>Hard	6	Conquer enemy homeworld</li> 
+          <p>(1) Requires that you destroy at least one ship yourself</p>
+          <h4>Possible mission rewards</h4>	
+          <li>Aww.	1	Nothing</li> 
+          <li>Okay	2	Credits = Current zone small asteroid minerals*5 amount equal in single player</li> 
+          <li>Okay	3	Credits = Current zone average asteroid minerals*5 amount equal in single player</li> 
+          <li>Okay	4	New random layout</li> 
+          <li>Okay	5	Two random layouts</li> 
+          <li>Nice!	6	You may buy random tech at half price (no other discouts). Draw as many tech cards as you have cha/2 and choose one or none to buy.</li>
+      </ul>
+      <h4>Zone counter</h4> 
+      <p>Zone counter counts when new zone level is revealed.<br>
+      At start of the game set zone counter to 10+average charisma of players.<br>
+      Every turn remove 1 from one counter.<br>
+        When players completes a zone mission add 5 to zone counter.</p>
+      <ol>
+        <h4>When zone counter reaches zero</h4>
+        <li>Create new NPC ally.</li>
+        <li>Add technologies to existing enemies.</li>
+        <li>Reveal X*(new zone number) number of tiles closest to the Earth randomly using 	the event table.</li> 
+        <li>Draw a card for new zone mission.</li>
+      </ol>
+      <ol>
+      <h4>Zone missions</h4>
+      <p>Only one zone mission for each zone and players get one total not one each.</p>	
+      <li>Explorers	Visit deep space.  Start = Zone*4 tiles from the Earth</li>	 
+      <li>Surveyors	Keep your ships in different star systems so that their 					total zone number is at least 5*current zone*X. (1)</li>
+      <li>Sharecroppers	Have to mine, but can't gain any resources from first X 					mined new star system in newest zone until zone counter is 1. (1)</li>
+      <li>Scaredy-cats	Do not explore systems with distance > zone*3 from Earth 				until zone counter is 1.</li>
+      <li>Pacifists	Do not attack on any enemy until zone counter is 1. (1)</li>
+      <li>Wingman	Do not move your ships alone until ZC is 1.</li>
+      </ol>
+      <p>(1) X is number of players<br>
+        (2) Defending is still okay</p><br>
+      <h4>Event cards</h4> 
+      <p>Event cards prevent all players to do certain actions or give players a chance to earn rewards.<br>
+      Each event card has a turn counter that determinates how long card stay in play.<br>Z means that the turn number is multiplied by current zone difficulty.<br>
+      When there is no event card in play or the latest event ended, draw a new event card.<br>
+      Shuffle event cards when last one expires.<br>
+      Wingman and rare cargo events require players to protect A.I. ship. All enemy ships will deal damage to players ship before A.I. ships in these events.</p>
+    </section><br>  
+    <section class="main-section" id="NPC_Guide">
+      <header><h3>NPC Guide</h3></header>
+      <h4>Creating new NPC</h4>
+      <p>There can only one non-enemy NPC corresponding to each zone.<br>	
+        For each NPC pick one card to see which enemy A.I. it has.<br>
+        Check out the planet NPC enemy is located for a planet bonus.<br>
+        Design starships for NPC. Check designing ships for NPC for further information.<br>
+        Add number of ships shown in SShip value*number of players in NPC base/homeworld.<br> 
+        Dship value shows which ships you should add, 1-1 means ints and frigates.<br>
+        Lsize means the land army NPC enemy has. Multiply this number by number of players.<br> Always get best unit they can get unless those units maximum number is reached.</p><br>
+
+      <h4>Enemy A.I.</h4>
+        <p>When creating new enemy base draw one card randomly to decide enemy A.I.<br> 
+        Each enemy always leave half of it's starting fleet in base.<br>
+          If there isn't any non-controlled place to send ships A.I. will attack closest homeplanet.</p><p> 
+      Creates ships when ship points are equal to different types of ships A.I enemy must build.</p>
+        <ol>
+          <li>Scaredy-cats</li><ul>
+          <li>Gains one ship point for every two controlled star systems. Homeplanet is count for 2 controlled star systems for them.</li>
+          <li>Send ships out in group of 5.</li>
+          <li>Sends ships out to closest star systems if even the one with the smallest 		shipscore.</li>
+          <li>Starts with nuclear missiles if doesn't get any weapons randomly.</li></ul>
+          <li>Explorers</li><ul>
+          <li>Gains one ship point for every scouted new star system.</li> 		
+          <li>Send ships out in group of 1.</li>
+          <li>Send ships out to closest non-scouted unexplored space clockwise starting from north.</li>
+          <li>Starts with fighter bay if doesn't get any weapons randomly.</li></ul>
+          <li>Hoarders</li><ul>
+          <li>Gains one ship point for every mined star system.</li> 
+          <li>Send ships out in group of 2.</li>
+          <li>Send ships out to closest non-base star system with resources clockwise starting from north.</li>
+          <li>Starts with laser cannon if doesn't get any weapons randomly.</li></ul>
+          <li>Surveyors</li><ul>
+          <li>Gains one ship point for every controlled space tile.</li> 
+          <li>Send ships out in group of 4.</li>
+          <li>Send ships out to closest non-base star system with clockwise starting from 		north.</li>
+          <li>Starts with TNT mines if doesn't get any weapons randomly.</li></ul>
+          <li>Manufacturers</li><ul>
+          <li>Gains one ship point in each turn.</li> 
+          <li>Send ships out in group of 3.</li>
+          <li>Send ships out to closest asteroids clockwise starting from north.</li>
+          <li>Starts with laser cannon if doesn't get any weapons randomly.</li></ul>
+          <li>Conquerors</li><ul>
+          <li>Gains one ship for every destroyed enemy ship. </li>
+          <li>Send ships out in group of 6.</li>
+          <li>At the start sends out attack fleet of half of it's starting fleet.</li>
+          <li>Send ships out to closest enemy homeworld clockwise clockwise starting from north.</li>
+          <li>Starts with laser beam if doesn't get any weapons randomly.</li></ul>
+      </ol>
+      <p>When zone counter is 0 and new zones are revealed, each old enemy A.I. gains extra technology to keep up in universe.<br>Draw 2 cards for them for tech and 5 cards for layout.<br> All old ships will be upgraded instantly.</p><br>
+    
+      <h4>Designing ships for A.I.</h4>
+      <p>Draw a card for each tech in list below. <br>
+      -If these cards consist +tech it counts as double tech.<br>
+      Draw a card for each layout in list below.<br> 
+      -If these cards consist +tech it counts as tech instead.<br>
+      -If these cards consist +layout it counts as a double layout.<br>
+        Layouts that doesn't help A.I. go to his engine instead.</p><br>
+      <h4>Designing a ship for NPC</h4>
+      <ol>
+        Small Shipyards<br><br>
+        <li>Jack's Spacebay (JS)			1 Class tech + 2 tech + 5 layout</li>
+        <li>New Frontier (NF)			1 Class 2 engine + 4 tech + 10 layout</li><br>
+        Big Shipyards<br><br>
+        <li>Star Docks (SD)			2 Class tech + 2 tech + 5 layout</li>
+        <li>Gaia Creations (GC)			2 Class 3 engine + 4 tech + 10 layout</li>
+        <li>Simon and Son (SS)			3 Class tech + 2 tech + 5 layout</li>
+        <li>Eden (E)				3 Class 4 engine + 4 tech + 10 layout</li><br>
+        Races<br><br>
+        <li>United Earth (UE)			4 Class + 2 tech + 5 layout</li>
+        <li>Star Alliance(SA)			4 Class 5 engine + 4 tech + 10 layout</li>	
+        <li>Aldebaran Council(AC)		5 Class + 2 tech + 5 layout</li>
+        <li>Galactic Union(GU)			5 Class 6 engine  + 4 tech + 10 layout</li><br>
+      </ol><ol>
+        Pirates<br><br>
+        <li>Roger's Pirates			1 Class + 2 tech + 5 layout</li>	
+        <li>Star Pirates				1 Class 2 engine + 4 tech + 10 layout</li><br>
+        Renegade aliens:<br><br>
+        <li>Alien faction 				2 Class + 2 tech + 5 layout</li>
+        <li>Alien faction 				2 Class 3 engine + 4 tech + 10 layout</li><br>
+        Alien Races<br><br>
+        <li>Alien race				3 Class + 2 tech + 5 layout</li>
+        <li>Alien race				3 Class 4 engine + 4 tech + 10 layout</li>
+        <li>Alien race				4 Class + 2 tech + 5 layout</li>
+        <li>Alien race				4 Class 5 engine + 4 tech + 10 layout</li>
+        <li>Alien race				5 Class + 2 tech + 5 layout</li>
+        <li>Alien race				5 Class 6 engine + 4 tech + 10 layout</li>
+        <li>Alien race				6 Class + 2 tech + 5 layout</li>
+      </ol>
+      <pre><code>
+      <strong>NPC			                Zone level     DShips   SShips</strong><br>	
+      1.Jack's Spacebay (JS)	        1	          1		12			
+      2.New Frontier (NF)			2	          1		12		
+      3.Star Docks (SD)			3	       1-1		12	
+      4.Gaia Creations (GC)		4	    1-1-1		12	
+      5.Simon and Son (SS)		5	    1-1-1		12	
+      6.Eden (E)			                6	    1-1-1		12
+      7.United Earth (UE)			7       1-1-1-1		12
+      8.Star Alliance(SA)			8       1-1-1-1		12		
+      9.Aldebaran Council(AC)		9    1-1-1-1-1	        12		
+      10.Galactic Union(GU)		10  1-1-1-1-1	        12	
+
+      <strong>NPC enemies		 Zone level	DShips       Lsize</strong><br>	
+      1.Roger's Pirates		1	               1	       6
+      2.Star Pirates			2	               1	     13
+      3.Alien Pirates 			3	            1-1	     40
+      4.Alien Faction 			4	            1-1	     80
+      5.Alien race			5	         1-1-1	   250
+      6.Alien race			6	         1-1-1	   500
+      7.Alien race			7	      1-1-1-1	  1500
+      8.Alien race			8	      1-1-1-1	  3000
+      9.Alien race			9	   1-1-1-1-1	 10000
+      10.Alien race			10	   1-1-1-1-1	 20000
+      11.Alien race			11	1-1-1-1-1-1	 60000
+</code></pre>
+      <h4>NPC Trust</h4>
+      <p>Players try to gain trust of NPC factions to gain their help by doing missions for them.<br>
+        Players start the game with zero trust points.<br>
+        When new NPC is made the old trust points carry over to it.<br>
+        Each completed loyalty mission increase trust points by 1.<br><br>
+        Players total trust:	X is the number of players</p>
+    <ol>
+      <li>If players total  trust >= 40X, all of the ships are in players control.</li>
+      <li>If players total trust >= 35X, 3/4 of the NPC fleet is in players control.</li>
+      <li>If players total trust >= 30X, all of the ships protect players shipyards.</li>
+      <li>If players total trust >= 25X, half of the NPC fleet is in players control.</li>
+      <li>If players total  trust >= 20X, 3/4 of the ships protect players shipyards.</li>
+      <li>If players total trust >= 15X, 1/4 of the NPC fleet is in players control.</li>
+      <li>If players total trust >= 10X, half of the ships protect players shipyards.</li>
+      <li>If players total trust >= 5X, 1/4 of the ships protect players shipyards.</li>
+   </ol>
+      <h4>Space fleet:</h4>
+	<p>Maximum fleet size is 5 ships for each player/A.I.. (6 for conquering A.I.) 
+	Only 5 ships can be moved to target location from one location.
+      If there would be more than 5 ships in one location other than in A.I. homeplanets, all the newest arrivals are returned to their previous locations.</p>
+    </section><br>  
+    <section class="main-section" id="Space_Battle">
+      <header><h3>Space Battle</h3></header>
+      <p>If ships from two different races arrive to target battle at same time the one that has faster engine will start.<br> If engine is even the one who moved from the nearest location will start.<br> If it is still even, the earlier race will start.</p><br>
+      <h4>Starting the battle</h4>
+      <p>Set each player ship tokens at the one side of the battlefield and enemies at opposite side starting from the smallest ships.</p><br>
+      <h4>Ships weapon limitations</h4>
+      <p>Interceptors only use one weapon in combat, frigates two weapons and so on.</p><br>
+      <h4>Turn structure</h4>
+    <ol>    
+      <li>Interceptor vs. Interceptor</li>
+		<p>All damage in the round is done simultaniously
+		All the damage are added together and in the end of the round distributed between enemy ships structure points.
+          A.I. will always use the weapon(s) that deals the most damage. If this is even use the list below to determinate the weapon used.</p>
+      <ol type="a">
+        <li>Beam weapons </li>
+			-Check out platings and force fields for defense
+        <li>Interceptors weapons</li>
+			-Check out platings and anti-aircraft defense for defense
+        <li>Laser weapons</li>
+			-Check out platings and force fields for defense
+        <li>Missile weapons</li>
+			-Check out platings and anti-aircraft defense for defense
+        <li>Mine weapons</li>
+			-Check out platings for defense
+      </ol><br>
+      <li>Frigate+Interceptor vs. Frigate+Interceptor</li><br>
+		same that in ints vs. ints<br><br>
+      <li>Destroyer+Frigate+Interceptor vs. Destroyer+Frigate+Interceptor</li><br>
+		same that in ints vs. ints
+	and so on...
+    </ol>
+      <p>When there is no larger ships to add in the battle, just repeat last round.<br> 
+      Shipyard counts as the largest ship in the battle so it joins the battle a round after every other ship has joined.<br>
+        A.I. will distribute damage so it kills as much the largest ships as possible then second largest etc. Extra damage is dealt to the largest ship left.<br> Shipyard counts as the smallest ship for this rule.</p>
+      <h4>Battle rules</h4>
+      <p>Each weapon can only be activated once each round.<br>
+      All the same weapons fire at the same time.<br>
+      Players can fix their damaged ships after the battle.<br> Repairing one structure point costs 10 credits.<br>
+        All the damaged A.I. ships will withdraw to their base/homeworld for repairs.</p>
+      <h4>Retreating from battle</h4>
+      <p>When ship decides to leave the battle mark it's token down, it will still  participiate in the next round of the battle.<br>After that round it moves back to the tile it came from.<br> 
+        A.I. ships won't retreat.</p>
+    <h4>Land army</h4>
+    <p>
+	Maximum land army size = (Largest ship size + compaction bonus)/5 
+	Starting unit limit for each unit = 5
+    A.I.'s space cadet limit in infinite.</p>
+    <pre><code>
+    <strong>Land unit	       	Hp	Damage	  Targets	Size	    Cost</strong><br>	
+    Space cadet	   1	      1		1	  1		10	
+    Humvee		   2	      1		3	  2		30	
+    Space marine	   2	      2		1	  1		100	
+    Attack drone	   2	      2		4	  2		300	
+    Tank			   4	      3		2	  3		1000	
+    Bomber drone	   2	      4		4	  2		3000	
+    Mech			 20	      4		 5	  5		10000	
+      </code></pre>
+      <h4>Land battle</h4>
+      <ol>
+        <li>Each side of battle chooses one land unit group that deals damage to target land 	unit stack simultaniously.</li>
+        <li>Remove all death units from each targeted unit stack. Land units cannot be injured.</li> 
+        <li>Each side chooses unused land unit stack that deals damage to target land unit 	stack simultaniously.</li> 
+	and so on, until all stacks have been used. Then start with phase 1 again.
+      </ol>
+  </section><br>  
+    <section class="main-section" id="Additional_rules">
+      <header><h3>Additional rules</h3></header>
+      <h4>Repairing/Refitting/Scrapping</h4>
+      <p>Repairing one structure point costs 10 credits.<br>
+        Repairing shipyard costs 10 credits/sp.<br>
+        Refitting old ships is possible, but you have to pay the full cost of the new ship part for each ship you have and all those ship need to be in your shipyard.<br> Refitting means changing the ship parts not getting better layouts.</p><br>
+
+      <h4>Designing new layouts</h4>
+        <p>Almost each ship part has 5 five levels of layouts.<br> So you must design it five time over to get the maximum value.<br>
+        Designing cost is research cost/5.<br>
+          You get one layout card for each 2 points of your ENG. You can buy one of them.</p><br>
+    </section>  
+    
+  </main>    
+</body>
+</html>
